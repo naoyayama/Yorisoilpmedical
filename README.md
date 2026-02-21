@@ -21,7 +21,7 @@
 ## 📁 フォルダ構成
 - `index.html`: LPのメインファイル（構造とスタイル）
 - `medical_trust.png`: セキュリティ信頼性を表すイラスト
-- `medical_trust_illustration_...`: 検討用のアセット
+- `medical_trust_illustration.png`: 検討用のアセット（元画像）
 - `yorisoi_lp_export.zip`: プロジェクト一式をまとめたアーカイブ
 
 ## 📦 プレビュー方法
