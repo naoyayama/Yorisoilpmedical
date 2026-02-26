@@ -257,14 +257,6 @@
         <div class="absolute inset-0 hero-pattern opacity-10 pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <!-- Decorative Corner Badges -->
-            <div class="absolute -top-10 -left-10 w-32 h-32 opacity-20 hidden lg:block" data-aos="fade-down-right">
-                <img src="heart_badge.png" alt="" class="w-full h-full object-contain">
-            </div>
-            <div class="absolute -top-10 -right-10 w-32 h-32 opacity-20 hidden lg:block" data-aos="fade-down-left">
-                <img src="check_badge.png" alt="" class="w-full h-full object-contain">
-            </div>
-
             <!-- Centered Headline Area -->
             <div class="text-center mb-16" data-aos="fade-down">
                 <div
@@ -306,6 +298,32 @@
 
                 <!-- Center Panel: Smartphone Mockup (Prominent) -->
                 <div class="relative flex justify-center" data-aos="zoom-in">
+                    <!-- Floating Decorative Assets (Design DNA SVG) -->
+                    <!-- Left: Heart/Medical Badge -->
+                    <div class="absolute -left-24 top-0 w-20 h-20 z-10 hidden xl:block animate-pulse"
+                        style="animation-duration: 3s;" data-aos="fade-up-right" data-aos-delay="1400">
+                        <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-lg">
+                            <circle cx="50" cy="50" r="45" fill="white" stroke="#0066b2" stroke-width="1.5" />
+                            <path d="M50 30 C35 30, 25 45, 50 70 C75 45, 65 30, 50 30" fill="#fef2f2" stroke="#ef4444"
+                                stroke-width="1.5" />
+                            <path d="M40 50 L48 50 L52 40 L56 60 L60 50 L68 50" fill="none" stroke="#ef4444"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <!-- Right: Medical Tablet/Check Badge -->
+                    <div class="absolute -right-24 top-10 w-24 h-24 z-10 hidden xl:block animate-pulse"
+                        style="animation-duration: 4s;" data-aos="fade-up-left" data-aos-delay="1600">
+                        <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-lg">
+                            <rect x="15" y="15" width="70" height="70" rx="15" fill="white" stroke="#0066b2"
+                                stroke-width="1.5" />
+                            <rect x="30" y="35" width="40" height="8" rx="4" fill="#60a5fa" opacity="0.2" />
+                            <rect x="30" y="50" width="30" height="8" rx="4" fill="#60a5fa" opacity="0.2" />
+                            <circle cx="75" cy="75" r="18" fill="#10b981" />
+                            <path d="M68 75 L73 80 L82 70" fill="none" stroke="white" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
                     <!-- Floating SOAP Cards (Design DNA style) -->
                     <div class="absolute -left-16 top-20 w-48 bg-white/95 backdrop-blur-md p-3 rounded-2xl shadow-xl dna-border z-30 hidden xl:block"
                         data-aos="fade-right" data-aos-delay="800">
