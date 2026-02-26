@@ -18,34 +18,23 @@
         }
 
         .bg-medical-navy {
-            background-color: #004a80;
-            /* Refined to match DNA blue deeper tone */
+            background-color: #1a365d;
         }
 
         .text-medical-navy {
-            color: #004a80;
-        }
-
-        .dna-blue {
-            color: #0066b2;
-            /* Primary DNA Blue */
-        }
-
-        .bg-dna-blue {
-            background-color: #0066b2;
+            color: #1a365d;
         }
 
         .bg-medical-blue {
-            background-color: #0066b2;
+            background-color: #3b82f6;
         }
 
         .bg-accent-orange {
             background-color: #f97316;
         }
 
-        .dna-border {
-            border-width: 1.5px;
-            border-color: #e2e8f0;
+        .gradient-blue {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
         }
 
         html {
@@ -251,199 +240,150 @@
         </div>
     </header>
 
-    <!-- New Hero Section (Design DNA Optimized) -->
-    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-white">
-        <!-- Subtle Pattern -->
-        <div class="absolute inset-0 hero-pattern opacity-10 pointer-events-none"></div>
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden gradient-blue text-white">
+        <!-- Depth & Background Layers -->
+        <div class="absolute inset-0 hero-pattern opacity-30"></div>
+        <div
+            class="absolute top-0 right-0 w-1/2 h-full bg-blue-400 mix-blend-multiply filter blur-[100px] opacity-40 rounded-full transform translate-x-1/2 -translate-y-1/2">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-1/3 h-1/2 bg-blue-800 mix-blend-multiply filter blur-[100px] opacity-60 rounded-full transform -translate-x-1/2 translate-y-1/2">
+        </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <!-- Centered Headline Area -->
-            <div class="text-center mb-16" data-aos="fade-down">
-                <div
-                    class="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 shadow-sm">
-                    <span class="flex h-2 w-2 relative mr-2">
-                        <span
-                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-                    </span>
-                    <span class="text-xs font-bold text-blue-700 tracking-wider">3省2ガイドライン準拠・医療機関・薬局向け</span>
-                </div>
-
-                <h1
-                    class="text-4xl sm:text-5xl lg:text-6xl font-black text-medical-navy leading-[1.2] mb-8 tracking-tight">
-                    診察室の会話を、<br class="hidden sm:block">
-                    <span
-                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">「カルテ」</span>と<span
-                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">「患者の安心」</span>へ。
-                </h1>
-
-                <p class="text-lg sm:text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-                    AIが会話を自動でSOAP化。処方箋は撮るだけでデータ化。<br class="hidden md:block">
-                    待ち時間削減と、質の高い対面コミュニケーションを両立します。
-                </p>
-            </div>
-
-            <!-- 3-Panel Visual Layout -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 items-end max-w-6xl mx-auto mb-16 px-4 sm:px-0">
-                <!-- Left Panel: Family/Consultation (Arch) -->
-                <div class="h-48 sm:h-64 bg-blue-50 rounded-t-full border-t border-x dna-border overflow-hidden relative max-w-[280px] mx-auto lg:max-w-none w-full"
-                    data-aos="fade-up" lg-data-aos="fade-right" data-aos-delay="200">
-                    <img src="family_scene.png" alt="患者・家族支援"
-                        class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-500">
-                    <div class="absolute top-4 left-0 right-0 text-center">
-                        <span
-                            class="bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold text-blue-600 dna-border">家族との対話を大切に</span>
-                    </div>
-                </div>
-
-                <!-- Center Panel: Smartphone Mockup (Prominent) -->
-                <div class="relative flex justify-center order-first lg:order-none mb-12 lg:mb-0" data-aos="zoom-in">
-                    <!-- Floating Decorative Assets (Design DNA SVG) -->
-                    <!-- Left: Heart/Medical Badge -->
-                    <div class="absolute -left-12 sm:-left-24 top-0 w-16 h-16 sm:w-20 sm:h-20 z-10 animate-pulse"
-                        style="animation-duration: 3s;" data-aos="fade-up-right" data-aos-delay="1400">
-                        <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-lg">
-                            <circle cx="50" cy="50" r="45" fill="white" stroke="#0066b2" stroke-width="1.5" />
-                            <path d="M50 30 C35 30, 25 45, 50 70 C75 45, 65 30, 50 30" fill="#fef2f2" stroke="#ef4444"
-                                stroke-width="1.5" />
-                            <path d="M40 50 L48 50 L52 40 L56 60 L60 50 L68 50" fill="none" stroke="#ef4444"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <!-- Right: Medical Tablet/Check Badge -->
-                    <div class="absolute -right-12 sm:-right-24 top-10 w-20 h-20 sm:w-24 sm:h-24 z-10 animate-pulse"
-                        style="animation-duration: 4s;" data-aos="fade-up-left" data-aos-delay="1600">
-                        <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-lg">
-                            <rect x="15" y="15" width="70" height="70" rx="15" fill="white" stroke="#0066b2"
-                                stroke-width="1.5" />
-                            <rect x="30" y="35" width="40" height="8" rx="4" fill="#60a5fa" opacity="0.2" />
-                            <rect x="30" y="50" width="30" height="8" rx="4" fill="#60a5fa" opacity="0.2" />
-                            <circle cx="75" cy="75" r="18" fill="#10b981" />
-                            <path d="M68 75 L73 80 L82 70" fill="none" stroke="white" stroke-width="2.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-
-                    <!-- Floating SOAP Cards (Design DNA style) -->
-                    <div class="absolute -left-8 sm:-left-16 top-24 w-40 sm:w-48 bg-white/95 backdrop-blur-md p-2 sm:p-3 rounded-2xl shadow-xl dna-border z-30"
-                        data-aos="fade-right" data-aos-delay="800">
-                        <span
-                            class="text-[7px] sm:text-[8px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded border border-blue-100 mb-1 sm:mb-2 inline-block">S:
-                            SUBJECTIVE</span>
-                        <p class="text-[9px] sm:text-[10px] font-medium text-gray-700 leading-tight">「3日前から咳と痰。夜間に喘鳴あり」
-                        </p>
-                    </div>
-                    <div class="absolute -right-12 sm:-right-20 top-48 w-44 sm:w-52 bg-white/95 backdrop-blur-md p-2 sm:p-3 rounded-2xl shadow-xl dna-border z-30"
-                        data-aos="fade-left" data-aos-delay="1000">
-                        <span
-                            class="text-[7px] sm:text-[8px] font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded border border-green-100 mb-1 sm:mb-2 inline-block">O:
-                            OBJECTIVE</span>
-                        <p class="text-[9px] sm:text-[10px] font-medium text-gray-700 leading-tight">SpO2 96%,
-                            胸部聴診にて軽度rhonchi。</p>
-                    </div>
-                    <div class="absolute -left-10 sm:-left-20 bottom-10 w-48 sm:w-56 bg-white/95 backdrop-blur-md p-2 sm:p-3 rounded-2xl shadow-xl dna-border z-30"
-                        data-aos="fade-right" data-aos-delay="1200">
-                        <span
-                            class="text-[7px] sm:text-[8px] font-bold text-orange-600 bg-orange-50 px-2 py-0.5 rounded border border-orange-100 mb-1 sm:mb-2 inline-block">A:
-                            ASSESSMENT</span>
-                        <p class="text-[9px] sm:text-[10px] font-medium text-gray-700 leading-tight">急性気管支炎の疑い。喘息性素因を考慮。
-                        </p>
-                    </div>
-
-                    <!-- Dashboard Mockup (Smartphone Style) -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <!-- Trust Indicator Badge -->
                     <div
-                        class="relative w-full max-w-[320px] bg-white p-3 rounded-[3rem] shadow-[0_30px_60px_-15px_rgba(0,102,178,0.3)] dna-border scale-110 z-20">
+                        class="inline-flex items-center px-3 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-6 shadow-sm">
+                        <span class="flex h-2 w-2 relative mr-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                        </span>
+                        <span class="text-xs font-bold tracking-wide">3省2ガイドライン準拠・医療機関向け</span>
+                    </div>
+
+                    <!-- Enhanced Typography -->
+                    <h1
+                        class="text-4xl sm:text-5xl lg:text-5xl font-bold leading-[1.3] mb-6 tracking-tight drop-shadow-md">
+                        診察室の会話を、そのまま<br>
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-yellow-200 drop-shadow-sm inline-block transform hover:scale-105 transition duration-300">「電子カルテ」</span>と<br>
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-yellow-200 drop-shadow-sm inline-block transform hover:scale-105 transition duration-300 delay-75">「患者の安心」</span>へ。
+                    </h1>
+
+                    <p class="text-base sm:text-lg opacity-90 mb-8 leading-relaxed font-medium">
+                        音声録音からSOAP形式を自動生成。処方箋は撮るだけでデータ化。<br class="hidden md:block">
+                        医療DXで事務工数を劇的に削減し、患者・家族との対話に専念できる環境を提供します。
+                    </p>
+
+                    <!-- Enhanced CTAs with Video Link -->
+                    <div class="flex flex-col sm:flex-row gap-4 w-full items-center">
+                        <a href="#contact"
+                            class="w-full sm:w-auto bg-white text-medical-navy text-center px-8 py-4 rounded-xl font-bold text-base sm:text-lg shadow-xl hover:bg-gray-50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group">
+                            無料デモを申し込む
+                            <svg class="w-5 h-5 ml-2 text-blue-500 group-hover:translate-x-1 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                        <button
+                            class="w-full sm:w-auto flex items-center justify-center px-6 py-4 rounded-xl font-bold text-base text-white/90 hover:text-white hover:bg-white/10 transition duration-300 group">
+                            <div
+                                class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center mr-3 group-hover:bg-white/30 transition">
+                                <svg class="w-4 h-4 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            1分でわかるデモ動画
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Dynamic UI Mockup side -->
+                <div class="relative" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <div
+                        class="bg-white/10 p-2 sm:p-4 rounded-[2rem] backdrop-blur-md border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
                         <div
-                            class="bg-gray-900 h-[560px] rounded-[2.5rem] overflow-hidden relative border-[6px] border-gray-900">
-                            <!-- App Content -->
-                            <div class="h-full bg-white text-gray-800 p-6 flex flex-col">
-                                <div class="flex items-center justify-between mt-4 mb-8">
-                                    <div class="w-10 h-10 bg-blue-100 rounded-xl overflow-hidden dna-border">
-                                        <img src="doctor_main.png" alt="Doctor" class="w-full h-full object-cover">
+                            class="bg-white rounded-[1.5rem] shadow-inner p-5 sm:p-6 text-gray-800 relative overflow-hidden">
+                            <!-- Background subtle pulse -->
+                            <div
+                                class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse">
+                            </div>
+
+                            <div class="flex items-center justify-between mb-5 border-b pb-4 relative z-10">
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-10 h-10 bg-gradient-to-br from-blue-100 to-blue-50 rounded-full flex items-center justify-center mr-3 shadow-inner border border-blue-100/50">
+                                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
+                                            </path>
+                                        </svg>
                                     </div>
-                                    <div class="flex h-4 space-x-1 items-end">
-                                        <div class="waveform-bar bg-blue-500"></div>
-                                        <div class="waveform-bar bg-blue-500"></div>
-                                        <div class="waveform-bar bg-blue-500"></div>
-                                    </div>
-                                </div>
-                                <div class="space-y-6">
-                                    <div class="bg-blue-50 p-4 rounded-2xl dna-border">
-                                        <span
-                                            class="text-[10px] font-bold text-blue-600 block mb-2 tracking-widest leading-none">AI分析中...</span>
-                                        <div class="h-12 flex flex-col justify-center">
-                                            <p class="text-xs font-bold text-gray-800 leading-relaxed">
-                                                「3日前から咳と痰。夜間に喘鳴あり」</p>
-                                        </div>
-                                    </div>
-                                    <div class="bg-slate-50 p-4 rounded-2xl border border-gray-100">
-                                        <span
-                                            class="text-[10px] font-bold text-slate-400 block mb-2 tracking-widest leading-none">電子カルテ連携
-                                            (SOAP)</span>
-                                        <div class="space-y-2">
-                                            <div class="h-2 w-full bg-gray-200 rounded"></div>
-                                            <div class="h-2 w-3/4 bg-gray-200 rounded"></div>
-                                        </div>
+                                    <div>
+                                        <p class="text-[10px] sm:text-xs text-gray-500 font-medium">AIカルテアシスタント</p>
+                                        <p class="font-bold text-sm sm:text-base text-gray-900">診察内容のリアルタイム解析</p>
                                     </div>
                                 </div>
-                                <div class="mt-auto mb-6">
-                                    <button
-                                        class="w-full bg-blue-600 text-white rounded-xl py-3 text-sm font-bold shadow-lg">処方箋をスキャン</button>
+                                <!-- Audio Waveform representation -->
+                                <div
+                                    class="flex items-end h-6 bg-orange-50 px-3 py-1 rounded-full border border-orange-100 shadow-sm">
+                                    <span
+                                        class="text-[8px] sm:text-[10px] font-bold text-orange-600 mr-2 uppercase tracking-wide">Recording</span>
+                                    <div class="flex items-end h-4 pb-0.5">
+                                        <div class="waveform-bar"></div>
+                                        <div class="waveform-bar"></div>
+                                        <div class="waveform-bar"></div>
+                                        <div class="waveform-bar"></div>
+                                        <div class="waveform-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SOAP Mockup with Typing Effect -->
+                            <div class="space-y-4 relative z-10">
+                                <div
+                                    class="bg-blue-50/80 p-3 sm:p-4 rounded-xl border border-blue-100/80 shadow-sm transform transition hover:scale-[1.01]">
+                                    <span
+                                        class="text-[10px] font-bold text-blue-600 uppercase tracking-widest bg-white px-2 py-0.5 rounded shadow-sm border border-blue-50">S:
+                                        Subjective</span>
+                                    <p class="text-xs sm:text-sm mt-2 font-medium text-gray-700 h-5">
+                                        <span class="typing-effect">「3日前から咳と痰。夜間に喘鳴あり」</span>
+                                    </p>
+                                </div>
+                                <div
+                                    class="bg-green-50/80 p-3 sm:p-4 rounded-xl border border-green-100/80 shadow-sm transform transition hover:scale-[1.01]">
+                                    <span
+                                        class="text-[10px] font-bold text-green-600 uppercase tracking-widest bg-white px-2 py-0.5 rounded shadow-sm border border-green-50">O:
+                                        Objective</span>
+                                    <p class="text-xs sm:text-sm mt-2 font-medium text-gray-700 h-5">
+                                        <span class="typing-effect typing-delay-1">SpO2 96%, 胸部聴診にて軽度rhonchi。</span>
+                                    </p>
+                                </div>
+                                <div
+                                    class="bg-orange-50/80 p-3 sm:p-4 rounded-xl border border-orange-100/80 shadow-sm transform transition hover:scale-[1.01]">
+                                    <span
+                                        class="text-[10px] font-bold text-orange-600 uppercase tracking-widest bg-white px-2 py-0.5 rounded shadow-sm border border-orange-50">A:
+                                        Assessment</span>
+                                    <p class="text-xs sm:text-sm mt-2 font-medium text-gray-700 h-5">
+                                        <span class="typing-effect typing-delay-2">急性気管支炎の疑い。喘息性素因を考慮。</span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Home Indicator -->
-                        <div
-                            class="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-32 h-1.5 bg-gray-300 rounded-full">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Panel: Online/Digital (Arch) -->
-                <div class="h-48 sm:h-64 bg-slate-50 rounded-t-full border-t border-x dna-border overflow-hidden relative max-w-[280px] mx-auto lg:max-w-none w-full"
-                    data-aos="fade-up" lg-data-aos="fade-left" data-aos-delay="400">
-                    <img src="online_scene.png" alt="オンライン診療・DX"
-                        class="absolute inset-0 w-full h-full object-cover rotate-y-180 opacity-90">
-                    <div class="absolute top-4 left-0 right-0 text-center">
-                        <span
-                            class="bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold text-blue-600 dna-border">どこでもカルテ作成</span>
                     </div>
                 </div>
             </div>
-
-            <!-- Enhanced CTAs -->
-            <div class="flex flex-col sm:flex-row gap-4 w-full items-center justify-center pt-8" data-aos="fade-up"
-                data-aos-delay="600">
-                <a href="#contact"
-                    class="w-full sm:w-auto bg-dna-blue text-white text-center px-10 py-4 rounded-2xl font-bold text-lg shadow-[0_15px_30px_-5px_rgba(0,102,178,0.4)] hover:bg-blue-700 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group">
-                    無料トライアルを開始
-                    <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none"
-                        stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                </a>
-                <button
-                    class="w-full sm:w-auto flex items-center justify-center px-8 py-4 rounded-2xl font-bold text-medical-navy bg-white border dna-border hover:bg-gray-50 transition duration-300 shadow-sm">
-                    <span class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
-                        <svg class="w-4 h-4 text-blue-600 ml-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </span>
-                    1分でわかるデモ動画
-                </button>
-            </div>
         </div>
-
-        <!-- Background Decor -->
-        <div
-            class="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-50 rounded-full filter blur-[100px] opacity-40 translate-x-1/2 -translate-y-1/2">
-        </div>
-        <div
-            class="absolute bottom-0 left-0 w-1/4 h-1/4 bg-blue-50 rounded-full filter blur-[80px] opacity-30 -translate-x-1/2 translate-y-1/2">
-        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50 to-transparent"></div>
     </section>
 
     <!-- Problem Section -->
@@ -905,11 +845,8 @@
                     <div class="px-6 py-12 flex-1 flex flex-col items-center text-center">
                         <div class="text-[#0066b2] mb-10 relative">
                             <!-- Lock and Circuit Icon -->
-                            <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                stroke-width="1.5">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z">
-                                </path>
+                            <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"></path>
                             </svg>
                         </div>
                         <p class="text-gray-900 font-bold text-lg leading-relaxed mt-auto">
@@ -927,11 +864,8 @@
                     <div class="px-6 py-12 flex-1 flex flex-col items-center text-center">
                         <div class="text-[#0066b2] mb-10 relative">
                             <!-- Trash bin Icon -->
-                            <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                stroke-width="1.5">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0">
-                                </path>
+                            <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"></path>
                             </svg>
                         </div>
                         <p class="text-gray-900 font-bold text-lg leading-relaxed mt-auto">
