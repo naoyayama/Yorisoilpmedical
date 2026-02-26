@@ -284,10 +284,10 @@
             </div>
 
             <!-- 3-Panel Visual Layout -->
-            <div class="grid lg:grid-cols-3 gap-4 lg:gap-8 items-end max-w-6xl mx-auto mb-16">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 items-end max-w-6xl mx-auto mb-16 px-4 sm:px-0">
                 <!-- Left Panel: Family/Consultation (Arch) -->
-                <div class="hidden lg:block h-64 bg-blue-50 rounded-t-full border-t border-x dna-border overflow-hidden relative"
-                    data-aos="fade-right" data-aos-delay="200">
+                <div class="h-48 sm:h-64 bg-blue-50 rounded-t-full border-t border-x dna-border overflow-hidden relative max-w-[280px] mx-auto lg:max-w-none w-full"
+                    data-aos="fade-up" lg-data-aos="fade-right" data-aos-delay="200">
                     <img src="family_scene.png" alt="患者・家族支援"
                         class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-500">
                     <div class="absolute top-4 left-0 right-0 text-center">
@@ -297,10 +297,10 @@
                 </div>
 
                 <!-- Center Panel: Smartphone Mockup (Prominent) -->
-                <div class="relative flex justify-center" data-aos="zoom-in">
+                <div class="relative flex justify-center order-first lg:order-none mb-12 lg:mb-0" data-aos="zoom-in">
                     <!-- Floating Decorative Assets (Design DNA SVG) -->
                     <!-- Left: Heart/Medical Badge -->
-                    <div class="absolute -left-24 top-0 w-20 h-20 z-10 hidden xl:block animate-pulse"
+                    <div class="absolute -left-12 sm:-left-24 top-0 w-16 h-16 sm:w-20 sm:h-20 z-10 animate-pulse"
                         style="animation-duration: 3s;" data-aos="fade-up-right" data-aos-delay="1400">
                         <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-lg">
                             <circle cx="50" cy="50" r="45" fill="white" stroke="#0066b2" stroke-width="1.5" />
@@ -311,7 +311,7 @@
                         </svg>
                     </div>
                     <!-- Right: Medical Tablet/Check Badge -->
-                    <div class="absolute -right-24 top-10 w-24 h-24 z-10 hidden xl:block animate-pulse"
+                    <div class="absolute -right-12 sm:-right-24 top-10 w-20 h-20 sm:w-24 sm:h-24 z-10 animate-pulse"
                         style="animation-duration: 4s;" data-aos="fade-up-left" data-aos-delay="1600">
                         <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-lg">
                             <rect x="15" y="15" width="70" height="70" rx="15" fill="white" stroke="#0066b2"
@@ -325,26 +325,29 @@
                     </div>
 
                     <!-- Floating SOAP Cards (Design DNA style) -->
-                    <div class="absolute -left-16 top-20 w-48 bg-white/95 backdrop-blur-md p-3 rounded-2xl shadow-xl dna-border z-30 hidden xl:block"
+                    <div class="absolute -left-8 sm:-left-16 top-24 w-40 sm:w-48 bg-white/95 backdrop-blur-md p-2 sm:p-3 rounded-2xl shadow-xl dna-border z-30"
                         data-aos="fade-right" data-aos-delay="800">
                         <span
-                            class="text-[8px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded border border-blue-100 mb-2 inline-block">S:
+                            class="text-[7px] sm:text-[8px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded border border-blue-100 mb-1 sm:mb-2 inline-block">S:
                             SUBJECTIVE</span>
-                        <p class="text-[10px] font-medium text-gray-700 leading-tight">「3日前から咳と痰。夜間に喘鳴あり」</p>
+                        <p class="text-[9px] sm:text-[10px] font-medium text-gray-700 leading-tight">「3日前から咳と痰。夜間に喘鳴あり」
+                        </p>
                     </div>
-                    <div class="absolute -right-20 top-40 w-52 bg-white/95 backdrop-blur-md p-3 rounded-2xl shadow-xl dna-border z-30 hidden xl:block"
+                    <div class="absolute -right-12 sm:-right-20 top-48 w-44 sm:w-52 bg-white/95 backdrop-blur-md p-2 sm:p-3 rounded-2xl shadow-xl dna-border z-30"
                         data-aos="fade-left" data-aos-delay="1000">
                         <span
-                            class="text-[8px] font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded border border-green-100 mb-2 inline-block">O:
+                            class="text-[7px] sm:text-[8px] font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded border border-green-100 mb-1 sm:mb-2 inline-block">O:
                             OBJECTIVE</span>
-                        <p class="text-[10px] font-medium text-gray-700 leading-tight">SpO2 96%, 胸部聴診にて軽度rhonchi。</p>
+                        <p class="text-[9px] sm:text-[10px] font-medium text-gray-700 leading-tight">SpO2 96%,
+                            胸部聴診にて軽度rhonchi。</p>
                     </div>
-                    <div class="absolute -left-20 bottom-10 w-56 bg-white/95 backdrop-blur-md p-3 rounded-2xl shadow-xl dna-border z-30 hidden xl:block"
+                    <div class="absolute -left-10 sm:-left-20 bottom-10 w-48 sm:w-56 bg-white/95 backdrop-blur-md p-2 sm:p-3 rounded-2xl shadow-xl dna-border z-30"
                         data-aos="fade-right" data-aos-delay="1200">
                         <span
-                            class="text-[8px] font-bold text-orange-600 bg-orange-50 px-2 py-0.5 rounded border border-orange-100 mb-2 inline-block">A:
+                            class="text-[7px] sm:text-[8px] font-bold text-orange-600 bg-orange-50 px-2 py-0.5 rounded border border-orange-100 mb-1 sm:mb-2 inline-block">A:
                             ASSESSMENT</span>
-                        <p class="text-[10px] font-medium text-gray-700 leading-tight">急性気管支炎の疑い。喘息性素因を考慮。</p>
+                        <p class="text-[9px] sm:text-[10px] font-medium text-gray-700 leading-tight">急性気管支炎の疑い。喘息性素因を考慮。
+                        </p>
                     </div>
 
                     <!-- Dashboard Mockup (Smartphone Style) -->
@@ -397,8 +400,8 @@
                 </div>
 
                 <!-- Right Panel: Online/Digital (Arch) -->
-                <div class="hidden lg:block h-64 bg-slate-50 rounded-t-full border-t border-x dna-border overflow-hidden relative"
-                    data-aos="fade-left" data-aos-delay="400">
+                <div class="h-48 sm:h-64 bg-slate-50 rounded-t-full border-t border-x dna-border overflow-hidden relative max-w-[280px] mx-auto lg:max-w-none w-full"
+                    data-aos="fade-up" lg-data-aos="fade-left" data-aos-delay="400">
                     <img src="online_scene.png" alt="オンライン診療・DX"
                         class="absolute inset-0 w-full h-full object-cover rotate-y-180 opacity-90">
                     <div class="absolute top-4 left-0 right-0 text-center">
